@@ -252,8 +252,9 @@ To start with you need to remove the old version of terraform, after that run th
 ```
   #!/bin/bash
   sudo yum update -y
+  sudo yum install -y wget 
   sudo yum install -y unzip
-  wget  https://releases.hashicorp.com/terraform/1.0.5/terraform_1.0.5_linux_amd64.zip
+  wget  https://releases.hashicorp.com/terraform/1.0.0/terraform_1.0.0_linux_amd64.zip
   unzip terraform_1.0.0_linux_amd64.zip
   sudo mv terraform /usr/bin/
 ```
