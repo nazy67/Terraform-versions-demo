@@ -1,10 +1,10 @@
-resource "aws_db_instance" "rds-db" {
+resource "aws_db_instance" "rds_db" {
   allocated_storage    = var.storage
   storage_type         = "gp2"
   engine               = "mariadb"
   engine_version       = "10.5"
   instance_class       = var.instance_class
-  identifier           = "${var.env}-rds"
+  identifier           = "my-rds"
   name                 = "my-rdsdb"
   username             = var.db_username
   password             = var.db_password
