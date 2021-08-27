@@ -39,6 +39,13 @@ resource "random_password" "password" {
   override_special = "_%"
 }
 
+variable "db_password" {
+  type        = string
+  description = "this is rds user db password"
+  default     = "password123"
+  sensitive   = true
+}
+
 output "password" {
     value = aws_db_instance.rds-db.password
     description = "this is the  address of rds instance"
