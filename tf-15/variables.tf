@@ -21,3 +21,9 @@ variable "instance_class" {
   description = "this is instance type of EC2"
   default     = "db.t2.micro"
 }
+
+variable "env" {
+  type        = string
+  description = "this is env"
+  default     = "dev"
+}
