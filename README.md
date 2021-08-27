@@ -1,12 +1,12 @@
 ## Terraform versions ~>v0.14.0 vs ~>v0.15.0 vs ~>v1.0.0
 
-When upgrading between major releases of Terraform it's recommended to go through the list of changes which is available the `Terraform Changelog`. And while doing upgrades if you run into any problems that are not addressed by the information in the given guide, they ask you to start a topic in [The Terraform community forum](https://discuss.hashicorp.com/c/terraform-core/27). 
+When upgrading between major releases of Terraform it's recommended to go through the list of changes which are usually available in the `Terraform Changelog`. And while doing upgrades if you run into any problems that are not addressed by the information in the given guide, they ask you to start a topic in [The Terraform community forum](https://discuss.hashicorp.com/c/terraform-core/27). 
 
 ### Terraform version 0.14.0
 
 Previously in Terraform `v0.13` and earlier, the `terraform init` command would always install the newest version of any provider in the configuration that would meet the configured version constraints. But starting from v.014 `terraform init` will also generate a `lock file` in the configuration directory which you can check in to your version control so that Terraform can make the same version selections in future. Here some changes that were introduced in `v0.14`:
 
-- Terraform `v0.14` will now also generate an explicit `deprecation warning`.
+- Terraform `v0.14` started  to generate an explicit `deprecation warning`.
 - The `terraform 0.13upgrade` subcommand and the associated upgrade mechanisms are no longer available. 
 - The `debug` command, which did not offer additional functionality, has been removed.
 
@@ -41,7 +41,6 @@ resource "random_password" "password" {
 variable "db_password" {
   type        = string
   description = "this is rds user db password"
-  default     = "password123"
   sensitive   = true
 }
 
