@@ -1,9 +1,9 @@
 resource "aws_security_group" "rds_sg" {
-  name        = "${var.env}-rds-sg"
+  name        = "rds-sg"
   description = "allow from self and local laptop"
 
   tags = {
-    Name = "${var.env}-rds-sg"
+    Name = "rds-sg"
   }
 }
 
