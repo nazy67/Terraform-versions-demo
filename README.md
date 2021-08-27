@@ -1,6 +1,6 @@
 ## Terraform versions ~>v0.14.0 vs ~>v0.15.0 vs ~>v1.0.0
 
-When upgrading between major releases of Terraform it's recommended to go through the list of changes which is available the [Terraform Changelog](https://github.com/hashicorp/terraform/blob/v0.14/CHANGELOG.md). And while doing upgrades if you run into any problems that are not addressed by the information in the given guide, they ask you to start a topic in [The Terraform community forum](https://discuss.hashicorp.com/c/terraform-core/27). 
+When upgrading between major releases of Terraform it's recommended to go through the list of changes which is available the `Terraform Changelog`. And while doing upgrades if you run into any problems that are not addressed by the information in the given guide, they ask you to start a topic in [The Terraform community forum](https://discuss.hashicorp.com/c/terraform-core/27). 
 
 ### Terraform version 0.14.0
 
