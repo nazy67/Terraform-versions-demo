@@ -4,7 +4,7 @@ resource "aws_db_instance" "rds-db" {
   engine               = "mariadb"
   engine_version       = "10.5"
   instance_class       = var.instance_class
-  identifier           = "${var.env}-rds"
+  identifier           = "my-rds"
   name                 = "my-rdsdb"
   username             = var.db_username
   password             = var.db_password
