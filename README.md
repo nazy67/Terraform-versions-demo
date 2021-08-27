@@ -30,7 +30,6 @@ resource "aws_db_instance" "rds-db" {
   username             = var.username
   password             = random_password.password.result
   vpc_security_group_ids    = [aws_security_group.rds_sg.id]
-  publicly_accessible       = var.env == "dev" ? true : false
 }
 
 resource "random_password" "password" {

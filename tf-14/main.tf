@@ -7,6 +7,12 @@ resource "aws_db_instance" "rds-db" {
   identifier           = "my-rds"
   name                 = "my-rdsdb"
   username             = var.db_username
-  password             = var.db_password
+  password             = random_password.password.result
   vpc_security_group_ids    = [aws_security_group.rds_sg.id]
+}
+
+resource "random_password" "password" {
+  length = 16
+  special = true
+  override_special = "_%"
 }
