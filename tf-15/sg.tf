@@ -4,6 +4,7 @@ resource "aws_security_group" "rds_sg" {
 
   tags = {
     Name = "rds-sg"
+    Envirnoment = "${var.env}"
   }
 }
 
