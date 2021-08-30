@@ -7,7 +7,6 @@ variable "db_username" {
 variable "db_password" {
   type        = string
   description = "this is rds user db password"
-  default     = "password123"
   sensitive = true
 }
 
