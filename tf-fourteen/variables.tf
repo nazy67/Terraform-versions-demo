@@ -7,7 +7,6 @@ variable "db_username" {
 variable "db_password" {
   type        = string
   description = "this is instance type of EC2"
-  default     = "password123"
 }
 
 variable "storage" {
